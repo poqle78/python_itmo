@@ -54,17 +54,17 @@ file_logger = logging.getLogger("currency_file")
 
 
 @logger(handle=file_logger)
-def get_currencies(currency_codes: list[str] = ('USD', 'EUR')) -> dict:
+def get_currencies(currency_codes: list[str] = ('USD', 'EUR'),
+                   url: str = 'https://www.cbr-xml-daily.ru/daily_json.js') -> dict:
     """
     Получает курсы валют с API Центробанка России.
 
     Args:
         currency_codes (list): Список символьных кодов валют (например, ['USD', 'EUR']).
-
+        url (str): ссылка
     Returns:
         dict: Словарь, где ключи - символьные коды валют, а значения - их курсы.
     """
-    url = 'https://www.cbr-xml-daily.ru/daily_json.js'
     try:
         response = requests.get(url)
         response.raise_for_status()  # Проверка на ошибки HTTP

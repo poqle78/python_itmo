@@ -54,6 +54,13 @@ file_logger = logging.getLogger("quadratic")
 
 @logger(handle=file_logger)
 def solve_quadratic(a, b, c):
+    """
+    Функция для вычисления корней квадратного уравнения.
+    :param a: коэффициент a
+    :param b: коэффициент b
+    :param c: коэффициент c
+    :return: корни этого квадратного уравнения
+    """
     logging.info(f"Solving equation: {a}x^2 + {b}x + {c} = 0")
 
     # Ошибка типов
@@ -89,4 +96,4 @@ def solve_quadratic(a, b, c):
     logging.info("Two real roots computed")
     return root1, root2
 
-print(solve_quadratic(q, 1, 3))
+print(solve_quadratic(-2, 4, 3))
