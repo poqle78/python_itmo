@@ -1,0 +1,66 @@
+INFO: Старт вызова: get_currencies args=(['USD'],), kwargs={}
+DEBUG: Starting new HTTPS connection (1): www.cbr-xml-daily.ru:443
+DEBUG: https://www.cbr-xml-daily.ru:443 "GET /daily_json.js HTTP/1.1" 200 2306
+INFO: Успешное завершение: get_currencies -> {'USD': 77.8998}
+INFO: Старт вызова: get_currencies args=(['XYZ'],), kwargs={}
+DEBUG: Starting new HTTPS connection (1): www.cbr-xml-daily.ru:443
+DEBUG: https://www.cbr-xml-daily.ru:443 "GET /daily_json.js HTTP/1.1" 200 2306
+ERROR: Исключение в функции: get_currencies: KeyError: 'Не существует ключа XYZ'
+INFO: Старт вызова: get_currencies args=(['XYZ'],), kwargs={}
+DEBUG: Starting new HTTPS connection (1): www.cbr-xml-daily.ru:443
+DEBUG: https://www.cbr-xml-daily.ru:443 "GET /daily_json.js HTTP/1.1" 200 2306
+ERROR: Исключение в функции: get_currencies: KeyError: 'Не существует ключа XYZ'
+INFO: Старт вызова: get_currencies args=(['XYZ'],), kwargs={}
+DEBUG: Starting new HTTPS connection (1): www.cbr-xml-daily.ru:443
+DEBUG: https://www.cbr-xml-daily.ru:443 "GET /daily_json.js HTTP/1.1" 200 2306
+ERROR: Исключение в функции: get_currencies: KeyError: 'Не существует ключа XYZ'
+INFO: Старт вызова: get_currencies args=(['XYZ'],), kwargs={}
+DEBUG: Starting new HTTPS connection (1): www.cbr-xml-daily.ru:443
+DEBUG: https://www.cbr-xml-daily.ru:443 "GET /daily_json.js HTTP/1.1" 200 2306
+ERROR: Исключение в функции: get_currencies: KeyError: 'Не существует ключа XYZ'
+INFO: Старт вызова: get_currencies args=(['USD'],), kwargs={}
+ERROR: Исключение в функции: get_currencies: ConnectionError: Ошибка при запросе к API: Network down
+INFO: Старт вызова: get_currencies args=(['RUB'],), kwargs={}
+ERROR: Исключение в функции: get_currencies: KeyError: 'Не существует ключа RUB'
+INFO: Старт вызова: get_currencies args=(['USD'],), kwargs={}
+ERROR: Исключение в функции: get_currencies: ValueError: Некорректный JSON: Invalid JSON
+INFO: Старт вызова: get_currencies args=(['USD'],), kwargs={}
+ERROR: Исключение в функции: get_currencies: KeyError: 'Валюта отсутствует в данных'
+INFO: Старт вызова: get_currencies args=(['USD', 'EUR'],), kwargs={}
+INFO: Успешное завершение: get_currencies -> {'USD': 76.2, 'EUR': 98.3}
+INFO: Старт вызова: get_currencies args=(), kwargs={}
+ERROR: Исключение в функции: get_currencies: ConnectionError: Ошибка при запросе к API: Сеть недоступна
+INFO: Старт вызова: get_currencies args=(['USD'],), kwargs={}
+ERROR: Исключение в функции: get_currencies: KeyError: 'Валюта отсутствует в данных'
+INFO: Старт вызова: get_currencies args=(['XYZ'],), kwargs={}
+ERROR: Исключение в функции: get_currencies: KeyError: 'Не существует ключа XYZ'
+INFO: Старт вызова: get_currencies args=(['USD'],), kwargs={}
+ERROR: Исключение в функции: get_currencies: TypeError: Курс валюты arbuz имеет неверный тип
+INFO: Старт вызова: get_currencies args=(['USD', 'EUR'],), kwargs={}
+INFO: Успешное завершение: get_currencies -> {'USD': 75.5, 'EUR': 85.3}
+INFO: Старт вызова: get_currencies args=(['USD'],), kwargs={}
+ERROR: Исключение в функции: get_currencies: ValueError: Некорректный JSON: Некорректный JSON
+INFO: Старт вызова: get_currencies args=(), kwargs={}
+ERROR: Исключение в функции: get_currencies: ConnectionError: Ошибка при запросе к API: Сеть недоступна
+INFO: Старт вызова: get_currencies args=(['USD'],), kwargs={}
+ERROR: Исключение в функции: get_currencies: KeyError: 'Валюта отсутствует в данных'
+INFO: Старт вызова: get_currencies args=(['XYZ'],), kwargs={}
+ERROR: Исключение в функции: get_currencies: KeyError: 'Не существует ключа XYZ'
+INFO: Старт вызова: get_currencies args=(['USD'],), kwargs={}
+ERROR: Исключение в функции: get_currencies: TypeError: Курс валюты arbuz имеет неверный тип
+INFO: Старт вызова: get_currencies args=(['USD', 'EUR'],), kwargs={}
+INFO: Успешное завершение: get_currencies -> {'USD': 75.5, 'EUR': 85.3}
+INFO: Старт вызова: get_currencies args=(['USD'],), kwargs={}
+ERROR: Исключение в функции: get_currencies: ValueError: Некорректный JSON: Некорректный JSON
+INFO: Старт вызова: get_currencies args=(), kwargs={}
+ERROR: Исключение в функции: get_currencies: ConnectionError: Ошибка при запросе к API: Сеть недоступна
+INFO: Старт вызова: get_currencies args=(['USD'],), kwargs={}
+ERROR: Исключение в функции: get_currencies: KeyError: 'Валюта отсутствует в данных'
+INFO: Старт вызова: get_currencies args=(['XYZ'],), kwargs={}
+ERROR: Исключение в функции: get_currencies: KeyError: 'Не существует ключа XYZ'
+INFO: Старт вызова: get_currencies args=(['USD'],), kwargs={}
+ERROR: Исключение в функции: get_currencies: TypeError: Курс валюты arbuz имеет неверный тип
+INFO: Старт вызова: get_currencies args=(['USD', 'EUR'],), kwargs={}
+INFO: Успешное завершение: get_currencies -> {'USD': 75.5, 'EUR': 85.3}
+INFO: Старт вызова: get_currencies args=(['USD'],), kwargs={}
+ERROR: Исключение в функции: get_currencies: ValueError: Некорректный JSON: Некорректный JSON
